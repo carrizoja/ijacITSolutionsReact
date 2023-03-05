@@ -1,0 +1,57 @@
+nav {
+  background: rgba(0, 0, 0, 0.3);
+  width:100%;
+  display: block;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(15px);
+}
+
+.itemsNav__container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo__container {
+  display: flex;
+}
+
+nav .itemsNav__container a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 0.3rem;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: "ConfortaRegular";
+}
+
+nav .itemsNav__container a:hover {
+  border-bottom: 1px solid #24E360;
+  /* set transition */
+  transition: all 0.3s ease-in-out;
+  /* background: rgba(0, 0, 0, 0.3); */
+  /* bottom */
+}
+
+nav .itemsNav__container a.active {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+/* css for ijac logo */
+
+.ijacLogo {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 10.5rem;
+}
