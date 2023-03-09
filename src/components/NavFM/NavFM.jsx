@@ -28,7 +28,7 @@ const NavFM = () => {
               <a href="#services">Servicios</a>
             </motion.li>
             <motion.li whileHover={{ backgroundColor: 'rgb(95,30,88)' }} whileTap={{ scale: 0.9 }}>
-              <a href="#aboutUs">Nosotros</a>
+              <a href="#about">Nosotros</a>
             </motion.li>
             <motion.li whileHover={{ backgroundColor: 'rgb(95,30,88)' }} whileTap={{ scale: 0.9 }}>
               <a href="#contact">Contacto</a>

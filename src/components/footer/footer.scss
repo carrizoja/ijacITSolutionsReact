@@ -1,5 +1,6 @@
 footer {
-  background-image: linear-gradient(to bottom, #24E360, #1da046);
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, var(--color-secondary)0%,
+  var(--color-secondary-variant)90%);
   padding: 3rem 0;
   text-align: center;
   font-size: 0.9rem;
@@ -7,12 +8,24 @@ footer {
 }
 
 footer a {
-  color: var(--color-bg);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.social-icon-wrapper {
+  background-color: var(--color-bg);
+  color: white;
+  display: flex;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
 }
 
 .footer__logo {
-  font-size: 2rem;
-  font-weight: 500;
+  height: 3.5rem;
+  width: 3.5rem;
   margin-bottom: 2rem;
   display: inline-block;
 }
@@ -25,6 +38,10 @@ footer a {
   margin: 0 auto 3rem;
 }
 
+.footer__link:hover {
+  color: #6abd45;
+}
+
 .footer__socials {
   display: flex;
   justify-content: center;
@@ -32,24 +49,27 @@ footer a {
   margin-bottom: 4rem;
 }
 
+
 .footer__socials a {
-  background: var(--color-bg);
   color: var(--color-white);
   padding: 0.8rem;
   border-radius: 0.7rem;
   display: flex;
   border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.footer__icon {
+  font-size: 1.7rem;
 }
 
 .footer__socials a:hover {
-  background: transparent;
-  color: var(--color-bg);
-  border-color: var(--color-bg);
+  color: #6abd45;
 }
 
 .footer__copyright {
   margin-bottom: 4rem;
-  color: var(--color-bg);
+  color: var(--color-white);
   font-family: "ConfortaRegular";
 }
 

@@ -1,15 +1,31 @@
-import React from "react";
+import React, {useState} from "react";
 import "./contact.scss";
-import {MdOutlineEmail} from 'react-icons/md'
-import {RiMessengerLine} from 'react-icons/ri'
 import {IoLogoWhatsapp} from 'react-icons/io5'
 import {useRef} from 'react';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { motion } from "framer-motion";
+
 
 
 const Contact = () => {
   const form = useRef();
+  const [inputs, setInputs] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setInputs({ ...inputs, [name]: value });
+  };
+
+  const allInputsFilled = inputs.name && inputs.email && inputs.message;
+
+  const notify = () => toast("¡Mensaje enviado!");
+ 
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -21,37 +37,45 @@ const Contact = () => {
   return (
     <section id="contact">
       <h5>Tu consulta no es molestia </h5>
-      <h2>Contacto</h2>
+      <h2 className="contact__title">Contacto</h2>
 
       <div className="container contact__container">
-        <div className="contact__options">
-          <article className="contact__option">
-            <MdOutlineEmail className="contact__option-icon" />
-            <h4>Email</h4>
-            <h5>jose.carrizo@ijac.com.ar</h5>
-            <a href="mailto:jose.carrizo@ijac.com.ar" target='_blank' rel="noreferrer">Send us a email</a>
-          </article>
-          <article className="contact__option">
-            <RiMessengerLine className="contact__option-icon" />
-            <h4>Facebook Messenger</h4>
-            <h5>iJac IT Solutions</h5>
-            <a href="https://m.me/ijacsolucionesinformaticas" target='_blank' rel="noreferrer">Send me a message</a>
-          </article>
-          <article className="contact__option">
-            <IoLogoWhatsapp className="contact__option-icon"/>
-            <h4>WhatsApp</h4>
-            <h5>+5491130284520</h5>
-            <a href="https://wa.me/+5491130284520/?text=Hey!, José. How are you? I want to contact you." target='_blank' rel="noreferrer">Send me a message</a>
-          </article>
-        </div>
-        {/* End of Contact Options */}
+
         <form className="contactForm" ref={form} onSubmit={sendEmail}>
-          <input type="text" name="name" placeholder="Tu nombre completo" required/>
-          <input type="email" name="email" placeholder="Tu email" required/>
-          <textarea name="message" rows="10" placeholder="Tu mensaje" required />
-          <button type="submit" className="btn btn-primary">Enviar Mensaje</button>
+          <input type="text" name="name" value={inputs.name} onChange={handleInputChange} placeholder="Tu nombre completo" required />
+          <input type="email" name="email" value={inputs.email} onChange={handleInputChange} placeholder="Tu email" required />
+          <textarea name="message" rows="10" value={inputs.message} onChange={handleInputChange} placeholder="Tu mensaje" required />
+          <motion.button onClick={notify} type="submit" className="btn btn-primary"  whileHover={{
+                scale: 1.1,
+                transition: { type: "spring" }
+              }}
+              whileTap={{
+                scale: 0.9,
+                transition: { type: "spring" }
+              }}>{/* <small>Enviar Mensaje</small> */}</motion.button>      
         </form>
-      </div>    
+        {allInputsFilled && <ToastContainer
+          position="bottom-center"
+          autoClose={3000}
+          hideProgressBar={true}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark" />}
+        <div className="container__whatsApp">
+
+          <motion.a href="https://api.whatsapp.com/send?phone=5491130862409&text=Hola, ¿cómo estás? Tengo una consulta para hacerte." className="float" rel="noreferrer" target="_blank" whileHover={{
+          rotate: 360,
+          scale: 1.2,
+          transition: {type: "spring", stiffness: 900, damping: 20 }
+        }}>
+            <IoLogoWhatsapp className="contact__whatsApp_logo" />
+          </motion.a>
+        </div>
+      </div>
     </section>
   );
 };

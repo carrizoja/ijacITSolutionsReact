@@ -1,0 +1,36 @@
+.Count {
+
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 1rem;
+/*   box-shadow: 1px 2px 2px #3e3f3f; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Count:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.aboutUs__icon {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 1rem;
+}
+
+.aboutUs__text {
+  font-size: 0.95rem;
+  font-family: "ConfortaRegular";
+  color:#b99aa5;
+}
+
+.aboutUs__text__counter {
+  padding-top: 10px;
+}
