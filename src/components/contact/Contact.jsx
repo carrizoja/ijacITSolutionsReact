@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { motion } from "framer-motion";
-
+import 'animate.css'
 
 
 const Contact = () => {
@@ -67,12 +67,12 @@ const Contact = () => {
           theme="dark" />}
         <div className="container__whatsApp">
 
-          <motion.a href="https://api.whatsapp.com/send?phone=5491130862409&text=Hola, ¿cómo estás? Tengo una consulta para hacerte." className="float" rel="noreferrer" target="_blank" whileHover={{
+          <motion.a href="https://api.whatsapp.com/send?phone=5491130862409&text=Hola, ¿cómo estás? Tengo una consulta para hacerte." className="float animate__animated animate__bounceInDown" rel="noreferrer" target="_blank" whileHover={{
           rotate: 360,
           scale: 1.2,
           transition: {type: "spring", stiffness: 900, damping: 20 }
         }}>
-            <IoLogoWhatsapp className="contact__whatsApp_logo" />
+            <IoLogoWhatsapp className="contact__whatsApp_logo "  />
           </motion.a>
         </div>
       </div>

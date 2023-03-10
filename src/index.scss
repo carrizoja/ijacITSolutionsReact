@@ -91,7 +91,10 @@ section>h5 {
 section>h2 {
   color: var(--color-primary);
   margin-bottom: 3rem;
+  text-shadow:
+    0 0 5px var(--color-primary),
 }
+
 
 .text-light {
   color: var(--color-light);

@@ -45,13 +45,14 @@ const Testimonials = () => {
       <h5>Lo que los clientes dicen de nosotros</h5>
       <h2>Testimonios</h2>
 
-      <Swiper className="container testimonials__container"
-       // install Swiper modules
-       modules={[Pagination]}
-       spaceBetween={40}
-       slidesPerView={1}
-       pagination={{ clickable: true }}>
-        
+            <Swiper className="container testimonials__container"
+              data-aos="flip-left"
+              // install Swiper modules
+              modules={[Pagination]}
+              spaceBetween={40}
+              slidesPerView={1}
+              pagination={{ clickable: true }}>
+
         {
           testimonials.map((testimonial) => {
             return (

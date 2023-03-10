@@ -1,5 +1,5 @@
 header {
-  height: 100vh;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -15,9 +15,69 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 70%;
-  background-size: cover;
-  z-index: -1;
-  /* set opacity */
-  opacity: 0.2; 
+  height: 90%;
+  background-size: cover; 
+  z-index: -1;  
+}
+
+.header__titleH1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -600%);
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "SphereFez";
+}
+
+.header__titleH2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -740%);
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "SphereFez";
+ 
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 680px }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color:#24E360 }
+}
+
+
+.header__subtitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -750%);
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: "ConfortaRegular";
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+.container__CTA {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -400%);
 }
