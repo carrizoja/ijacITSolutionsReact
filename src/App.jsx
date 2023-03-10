@@ -9,6 +9,7 @@ import Testimonials from './components/testimonials/Testimonials';
 import IjacServices from './components/ijacServices/IjacServices';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Carousel from './components/carousel/Carousel';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
     <> 
       <NavFM/>
       <Header />
+      <Carousel/>
       <IjacServices/>
       <About/>
       <Testimonials/> 
