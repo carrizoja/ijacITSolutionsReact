@@ -143,6 +143,7 @@ input:focus::placeholder {
   z-index:100;
 }
 
+
 .my-float{
 	margin-top:16px;
 }
@@ -151,6 +152,37 @@ input:focus::placeholder {
   padding-top: 5px; 
   height: 40px;
   width: 40px;
+}
+
+.contact__whatsApp_logo:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* CSS for container location */
+.container__location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* set border */
+  border: 2px solid var(--color-primary-variant);
+  border-radius: 0.5rem;
+  width: 70%;
+  margin: 50px auto 0 auto;
+}
+
+.container__location > p {
+  color: #9b9bad;
+  font-family: "ConfortaRegular";
+
+}
+
+.container__location__icon {
+  color: #24E360;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Media Queries for Tablet devices */

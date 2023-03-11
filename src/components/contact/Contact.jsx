@@ -7,6 +7,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { motion } from "framer-motion";
 import 'animate.css'
+import { FaLocationArrow } from 'react-icons/fa';
+
 
 
 const Contact = () => {
@@ -52,8 +54,14 @@ const Contact = () => {
               whileTap={{
                 scale: 0.9,
                 transition: { type: "spring" }
-              }}>{/* <small>Enviar Mensaje</small> */}</motion.button>      
+              }}></motion.button>      
         </form>
+        <article className="container__location">
+            <FaLocationArrow className="container__location__icon"/>
+            <p>Almagro</p>
+            <p>Ciudad Autónoma de Buenos Aires</p>
+            <p>Argentina</p>
+        </article>
         {allInputsFilled && <ToastContainer
           position="bottom-center"
           autoClose={3000}
@@ -66,7 +74,6 @@ const Contact = () => {
           pauseOnHover
           theme="dark" />}
         <div className="container__whatsApp">
-
           <motion.a href="https://api.whatsapp.com/send?phone=5491130862409&text=Hola, ¿cómo estás? Tengo una consulta para hacerte." className="float animate__animated animate__bounceInDown" rel="noreferrer" target="_blank" whileHover={{
           rotate: 360,
           scale: 1.2,
