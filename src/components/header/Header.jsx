@@ -15,7 +15,7 @@ const Header = () => {
           </div>
           <div className="container__CTA">
             <button>
-              <a className="btn-primary btn" href="#contact">Ponete en contacto</a>
+              <a className="btn-primary btn" href="#contact">A</a>
             </button>       
           </div>
         </div>  

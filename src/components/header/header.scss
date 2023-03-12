@@ -80,3 +80,61 @@ header {
   left: 50%;
   transform: translate(-50%, -400%);
 }
+
+/* CSS for Contact Button */
+
+.btn-primary {
+  margin: 0 auto;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  color: black;
+  /* background-color: #6abd45; */
+  background: linear-gradient(60deg,#24E360,#f79533,#f37055,#ef4e7b,#a166ab,#5073b8,#1098ad,#07b39b,#6fba82 );
+  box-shadow: 2px 2px 3px #333333;
+}
+
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  height: 70%;
+  background: linear-gradient(60deg,#24E360,#f79533,#f37055,#ef4e7b,#a166ab,#5073b8,#1098ad,#07b39b,#6fba82 );
+  z-index: 1;
+  transition: 0.3s opacity ease-in-out;
+  filter: blur(5px);
+}
+
+.btn-primary:hover::before {
+  opacity: 1;
+  transition: 0.3s opacity ease-in-out;
+  filter: blur(25px);
+
+}
+
+.btn-primary:hover {
+  color: white;
+  background-color: var(--color-secondary);
+  box-shadow: 2px 2px 3px #333333;
+  background: linear-gradient(60deg,#24E360,#f79533,#f37055,#ef4e7b,#a166ab,#5073b8,#1098ad,#07b39b,#6fba82 );
+} 
+
+.btn-primary::after {
+  content: "Contactanos";
+  text-align:center;
+  line-height:35px;
+  position:absolute;
+  font-size: 15px;
+  font-family: "ConfortaRegular";
+  border-radius: 5%;
+  top:6%;
+  left: 3%;
+  width: 95%;
+  height: 89%;
+  z-index: 5;
+  color: #ecf0f3; 
+  display: block;
+  background-color: #3f143a;
+}
