@@ -52,8 +52,39 @@
 
 .services__container__img img {
   height: 100%;
-  width: 100%;
+  width: 100%; 
   border-radius: 1rem;
+}
+
+/* Media Query for mobile devices */
+@media screen and (max-width: 600px) {
+  .services__container__card {
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .services__container__card__design {
+    flex-direction: column;
+
+  }
+
+  .services__container__text {
+  
+    width: 70%;
+  
+  }
+
+  .services__container {
+   
+    width: 95%;
+ 
+  }
+  
 }
 
 

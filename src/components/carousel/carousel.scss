@@ -71,3 +71,38 @@
 
 
 
+@media screen and (max-width: 600px) {
+  .container.header__container{
+    width: var(--container-width-sm);
+  }
+
+  .container__carousel__img {
+  height: 23vh;
+   
+  }
+
+  .carousel__img__abstract > h3, p {
+    font-family: "ConfortaRegular";
+    text-align: center;
+    font-size: 1rem;
+    max-width: 30ch;
+  } 
+
+  .carousel__img__abstract2 > h3, p {
+    font-family: "ConfortaRegular";
+    text-align: center;
+    font-size: 1rem;
+  } 
+
+  .carousel__img__abstract3 > h3, p {
+    font-family: "ConfortaRegular";
+    text-align: center;
+    font-size: 1rem;
+  } 
+
+
+ 
+}
+
+
+

@@ -75,13 +75,13 @@ const Contact = () => {
           theme="dark" />}
         <div className="container__whatsApp">
           <motion.a href="https://api.whatsapp.com/send?phone=5491130862409&text=Hola, ¿cómo estás? Tengo una consulta para hacerte." className="float animate__animated animate__bounceInDown" rel="noreferrer" target="_blank" whileHover={{
-          rotate: 360,
-          scale: 1.2,
-          transition: {type: "spring", stiffness: 900, damping: 20 }
-        }}>
-            <IoLogoWhatsapp className="contact__whatsApp_logo "  />
+            rotate: 360,
+            scale: 1.2,
+            transition: { type: "spring", stiffness: 900, damping: 20 }
+          }}>
+            <IoLogoWhatsapp className="contact__whatsApp_logo " />
           </motion.a>
-        </div>
+        </div> 
       </div>
     </section>
   );

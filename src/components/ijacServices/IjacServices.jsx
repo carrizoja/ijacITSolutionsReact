@@ -61,7 +61,7 @@ const IjacServices = () => {
             }{
               designs.map((design) => {
                 return (
-                  <div key={design.id} className='services__container__card' data-aos="zoom-in">
+                  <div key={design.id} className='services__container__card services__container__card__design ' data-aos="zoom-in">
                      <div className='services__container__img'>
                       <img src={design.image} alt="services" />
                     </div>

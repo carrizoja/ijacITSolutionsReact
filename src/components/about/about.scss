@@ -102,8 +102,27 @@
   }
   .about__content {
       text-align: center;
+      margin: 1.5rem 0; 
   }
-  .about__content {
-      margin: 1.5rem 0;
-  }
+
+
+  
+.about__me-image {
+
+  height: 15rem;
+  width: 15rem;
 }
+
+.about__content > p {
+ /*  margin: 2rem 0 2.6rem;  */
+  color: var(--color-light);
+  font-family: "ConfortaRegular";
+  text-align: center;
+  margin: 0 auto;
+}
+
+}
+
+
+
+  

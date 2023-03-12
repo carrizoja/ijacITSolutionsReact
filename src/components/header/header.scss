@@ -39,7 +39,6 @@ header {
   font-size: 2rem;
   text-align: center;
   font-family: "SphereFez";
- 
 }
 
 /* The typing effect */
@@ -137,4 +136,36 @@ header {
   color: #ecf0f3; 
   display: block;
   background-color: #3f143a;
+}
+
+
+/* Media Queries for mobile devices */
+
+@media screen and (max-width: 600px) {
+  .container.header__container{
+    width: var(--container-width-sm);
+  }
+
+  .header__titleH2 {
+   
+    transform: translate(-40%, -1210%);
+    font-size: 1rem;
+   
+
+  }
+
+  .header__subtitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -1150%);
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    font-family: "ConfortaLight";
+    max-width: 62ch;
+
+  }
+
+ 
 }

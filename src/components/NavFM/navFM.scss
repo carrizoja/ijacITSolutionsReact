@@ -1,12 +1,3 @@
-/* 
- body {
-  width: 100%;
-  height: 100vh;
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(254, 113, 210,1)0%,
-  rgba(194,96,255,1)90%
-  );
-
-} */
 
 nav {
   position: fixed;
@@ -91,4 +82,25 @@ nav .inner-nav li a:hover {
   margin-bottom: 4rem;
   width: 100px;
   height: auto;
+}
+
+/* CSS for mobile devices */
+@media screen and (max-width:600px){
+  nav {
+ 
+    width: 150px;   
+  }
+  .logoContainer {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+  } 
+  .ijacLogoPos {
+    margin-bottom: 3rem;
+    width: 70px;
+    height: auto;
+  }
 }

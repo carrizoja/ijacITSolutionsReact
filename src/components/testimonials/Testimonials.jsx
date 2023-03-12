@@ -41,8 +41,8 @@ const Testimonials = () => {
       :
 
 
-    <section id="testimonials">
-      <h5>Lo que los clientes dicen de nosotros</h5>
+    <section className="testimonials__section" id="testimonials">
+      <h5 className="testimonials__title">Lo que los clientes dicen de nosotros</h5>
       <h2>Testimonios</h2>
 
             <Swiper className="container testimonials__container"

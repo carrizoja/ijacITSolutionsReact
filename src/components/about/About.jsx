@@ -9,14 +9,14 @@ const About = () => {
 
       <h2>Nosotros</h2>
       <div className="container about__container">
-        <div className="about__me" data-aos="fade-right"
+        <div className="about__me" data-aos="flip-right"
           data-aos-offset="150"
           data-aos-easing="ease-in-sine">
           <div className="about__me-image">
             <img src="https://res.cloudinary.com/ijac-it-solutions/image/upload/v1678140653/img/technology_about_us_hgvqfb.jpg" alt="technology" />
           </div>
         </div>
-        <div className="about__content" data-aos="fade-left"
+        <div className="about__content" data-aos="flip-left"
           data-aos-offset="150"
           data-aos-easing="ease-in-sine">
           <div className="about__cards">
