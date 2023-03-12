@@ -87,7 +87,6 @@ nav .inner-nav li a:hover {
 /* CSS for mobile devices */
 @media screen and (max-width:600px){
   nav {
- 
     width: 150px;   
   }
   .logoContainer {
@@ -100,6 +99,25 @@ nav .inner-nav li a:hover {
   } 
   .ijacLogoPos {
     margin-bottom: 3rem;
+    width: 70px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1181px){
+  nav {
+    width: 200px;   
+  }
+  .logoContainer {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+  } 
+  .ijacLogoPos {
+    margin-bottom: 2rem;
     width: 70px;
     height: auto;
   }
