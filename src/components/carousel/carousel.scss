@@ -3,6 +3,12 @@
   height: 100%;
 }
 
+.container__carousel {
+  width: 85%;
+  border-radius: 10px;
+  
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -19,22 +25,49 @@
   object-fit: cover;
 }
 
+/*  */
+
 .container__carousel__img {
   background-size: cover;
   background-position: center center;
-  height: 42vh;
+  height: 40vh;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
  
 }
-.carousel__img__mother {
-  background-image:url(https://res.cloudinary.com/ijac-it-solutions/image/upload/v1678591804/svgs/2_000_Converted_uoquau.svg);
+.carousel__img__abstract {
+  background-image:url(https://res.cloudinary.com/ijac-it-solutions/image/upload/v1678639454/img/abstract_wibshm.jpg);
 }
 
-.carousel__img__mother2 {
-  background-image:url(https://res.cloudinary.com/ijac-it-solutions/image/upload/v1661222132/img/micro_mycmmk.jpg);
+ .carousel__img__abstract > h3, p {
+  font-family: "ConfortaRegular";
+  font-weight: bold;
+  text-align: center;
+} 
+
+.carousel__img__abstract2  {
+  background-image:url(https://res.cloudinary.com/ijac-it-solutions/image/upload/v1678646859/img/v904-nunny-010-l_exrnpl.jpg);
+
 }
 
-.container__carousel {
-  width: 90%;
-  border-radius: 10px;
+.carousel__img__abstract2 > h3, p {
+  font-family: "ConfortaRegular";
+  font-weight: bold;
+  text-align: center;
+} 
+
+.carousel__img__abstract3 {
+  background-image:url(https://res.cloudinary.com/ijac-it-solutions/image/upload/v1678647373/img/gradient_background_a_3_14_1_fbbiqu.jpg);
 }
+
+.carousel__img__abstract3 > h3, p {
+  font-family: "ConfortaRegular";
+  font-weight: bold;
+  text-align: center;
+} 
+
+
+
