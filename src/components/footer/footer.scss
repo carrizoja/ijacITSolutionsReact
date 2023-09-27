@@ -1,9 +1,5 @@
 footer {
- /*  background-image: radial-gradient(circle farthest-corner at 10% 20%, var(--color-secondary)0%,
-  var(--color-secondary-variant)90%); */
   background-image: linear-gradient( 111.4deg,  rgba(27,24,113,1) 6.5%, rgba(7,7,9,1) 93.2% );
-  /* set border */
- /*  border: 1px solid var(--color-primary); */
   padding: 3rem 0;  
   text-align: center;
   font-size: 0.9rem;
@@ -13,6 +9,7 @@ footer {
 footer a {
   color: var(--color-white);
   text-decoration: none;
+  font-family: "ConfortaRegular", sans-serif;
 }
 
 .social-icon-wrapper {

@@ -76,12 +76,13 @@
 
 /* Media Query for mobile devices */
 @media screen and (max-width: 600px) {
+ 
   .services__container__card {
     display: flex;
     flex-direction:column-reverse;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -101,6 +102,14 @@
    
     width: 95%;
  
+  }
+
+  .services__container__img img {
+    height: 150px;
+    width: 250px; 
+    object-fit:contain;
+    border-radius: 1rem;
+    margin-top: 10px;
   }
   
 }

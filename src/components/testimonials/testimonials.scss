@@ -98,6 +98,9 @@
 /* Media Queries for Mobile Devices */
 
 @media screen and (max-width: 600px) {
+  .testimonials__section {
+      width: 95%;
+  }
   .container.testimonials__container {
       width: var(--container-width-sm);
   }
@@ -117,6 +120,10 @@
     transform: translate(-50%, -50%);
     margin-top: 1rem;
   
+  }
+
+  .testimonials__title {
+    font-size: 15px;
   }
 
 }

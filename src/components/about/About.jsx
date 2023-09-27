@@ -24,7 +24,7 @@ const About = () => {
               {data.counts.map(count => <Counter key={count.id} data={count} />)}
             </div>
           </div>
-          <p>
+          <p className="about__description">
             Somos un grupo integral de profesionales apasionados por el mundo IT y abocados a la resolución de incidencias que el mundo digital propone
           </p>
         </div>
