@@ -100,6 +100,7 @@
 @media screen and (max-width: 600px) {
   .testimonials__section {
       width: 95%;
+      margin-top: 1rem !important;
   }
   .container.testimonials__container {
       width: var(--container-width-sm);

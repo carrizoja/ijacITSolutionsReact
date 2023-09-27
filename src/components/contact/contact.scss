@@ -218,6 +218,11 @@ input:focus::placeholder {
 /* Media Queries for mobile devices */
 
 @media screen and (max-width: 600px) {
+
+  .contact__container__section {
+    width: 95%;
+    margin-top: 1rem;
+  }
   .container.contact__container {
       width: var(--container-width-sm);
   }
