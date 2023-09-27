@@ -5,9 +5,9 @@ import data from "../../data/dataCounter.json"
 
 const About = () => {
   return (
-    <section id="about">
+    <section className="about__container__section" id="about">
 
-      <h2>Nosotros</h2>
+      <h2 className="about__title">Nosotros</h2>
       <div className="container about__container">
         <div className="about__me" data-aos="flip-right"
           data-aos-offset="150"

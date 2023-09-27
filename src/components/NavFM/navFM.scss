@@ -13,21 +13,22 @@ nav {
 .inner-nav {
   position: absolute;
   top: 0;
-  left: 0;
   bottom: 0; 
   width: 100%;
-  background-color: aliceblue;
+  background-color: #121145;
   border-radius: 1%;
   /* set background shadow */
   box-shadow: 21px 2px 48px -1px rgba(0, 0, 0,0.09);
 }
 
 button.toggle {
-  background-color: aliceblue;
+  background-color: #121145;
+  color: #fff;
   z-index: 101;
   position: fixed;
   outline: 0;
   border: none;
+  user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none; 
@@ -57,14 +58,14 @@ nav .inner-nav ul li {
 
 nav .inner-nav li a {
   font-size: 1rem;
-  color: #000;
+  color:#fff;
   text-decoration: none;
   transition: 1s all ease-in-out;
   font-family: "ConfortaRegular";
 }
 
 nav .inner-nav li a:hover {
-  color: #fff;
+  color: #24E360;
 }
 
 /* Css for Logo ijac */
@@ -79,8 +80,8 @@ nav .inner-nav li a:hover {
 } 
 
 .ijacLogoPos {
-  margin-bottom: 4rem;
-  width: 100px;
+  margin-bottom: 5rem;
+  width: 80px;
   height: auto;
 }
 

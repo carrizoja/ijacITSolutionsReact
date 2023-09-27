@@ -17,14 +17,15 @@ function App() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-  });
+    window.history.scrollRestoration = 'manual'
+  }, []);
   return (
     <> 
       <NavFM/>
       <Header />
       <Carousel/>
       <IjacServices/>
-      <About/>
+      <About/> 
       <Testimonials/> 
       <Contact />
       <Footer /> 

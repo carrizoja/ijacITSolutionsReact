@@ -1,10 +1,13 @@
 footer {
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, var(--color-secondary)0%,
-  var(--color-secondary-variant)90%);
+ /*  background-image: radial-gradient(circle farthest-corner at 10% 20%, var(--color-secondary)0%,
+  var(--color-secondary-variant)90%); */
+  background-image: linear-gradient( 111.4deg,  rgba(27,24,113,1) 6.5%, rgba(7,7,9,1) 93.2% );
+  /* set border */
+ /*  border: 1px solid var(--color-primary); */
   padding: 3rem 0;  
   text-align: center;
   font-size: 0.9rem;
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 footer a {
@@ -46,7 +49,7 @@ footer a {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 
@@ -68,7 +71,7 @@ footer a {
 }
 
 .footer__copyright {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   color: var(--color-white);
   font-family: "ConfortaRegular";
 }

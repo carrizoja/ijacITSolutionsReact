@@ -6,7 +6,7 @@
           "label2": "clientes confiando en nuestros servicios",
           "icon": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1678213748/svgs/multiple-users-svgrepo-com_dscfiv.svg",
           "number": "150",
-          "duration": "20"
+          "duration": "5"
       },
       {
           "id": "002",
@@ -14,7 +14,7 @@
           "label2": "años de experiencia en el mercado",
           "icon": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1678217046/svgs/medal_izf3jj.svg",
           "number": "15",
-          "duration": "20"
+          "duration": "5"
       },
       {
         "id": "003",
@@ -22,7 +22,7 @@
         "label2": " trabajos y proyectos realizados",
         "icon": "https://res.cloudinary.com/ijac-it-solutions/image/upload/v1678217529/svgs/tools-svgrepo-com_emdclk.svg",
         "number": "1000",
-        "duration": "20"
+        "duration": "5"
     }
   ]
 }

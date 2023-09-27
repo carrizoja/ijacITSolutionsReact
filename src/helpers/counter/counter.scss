@@ -1,6 +1,5 @@
 .Count {
-
-  background: var(--color-bg-variant);
+  background: #121145;
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 2rem;
@@ -16,7 +15,7 @@
 .Count:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
-  cursor: default;
+  cursor: pointer;
 }
 
 .aboutUs__icon {
@@ -28,7 +27,7 @@
 .aboutUs__text {
   font-size: 0.95rem;
   font-family: "ConfortaRegular";
-  color:#b99aa5;
+  color:#fff;
 }
 
 .aboutUs__text__counter {

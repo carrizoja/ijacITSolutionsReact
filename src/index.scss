@@ -33,8 +33,10 @@
 /* Roots variables */
 
 :root {
-    --color-bg: #6d2366;
-    --color-bg-variant: #361132; 
+    --color-bg: #333333;
+    --color-bg-variant: #242424; 
+    --color-bg2: #6d2366;
+    --color-bg-variant2: #361132; 
     --color-primary: #24E360;
     --color-primary-variant: rgba(77, 181, 255, 0.4);
     --color-secondary: #174273;
@@ -54,8 +56,9 @@ html {
 body {
   font-family: "ConfortaRegular", sans-serif;
   /* Set linear gradient background */
-background-image: radial-gradient(circle farthest-corner at 10% 20%, var( --color-bg)0%,
-  var(--color-bg-variant)90%);
+background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+/* background-image: radial-gradient(circle farthest-corner at 10% 20%, var( --color-bg)0%,
+  var(--color-bg-variant)90%); */
   overflow-x: hidden; 
 }
 
@@ -80,7 +83,7 @@ h1 {
 }
 
 section {
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 
 section>h2,

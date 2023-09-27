@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import "./navFM.scss";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import ijacLogoPos from '../../assets/logo_ijac_pos.png'
+import ijacLogoPos from '../../assets/logo_ijac_neg.png'
 
 
 const variants = {
@@ -21,22 +21,21 @@ const NavFM = () => {
       >
         <motion.div className="inner-nav">
           <ul>
-            <motion.li whileHover={{ backgroundColor: 'rgb(95,30,88)' }} whileTap={{ scale: 0.9 }}>
+            <motion.li whileHover={{ backgroundColor: '#1e1d44' }} whileTap={{ scale: 0.9 }}>
               <a href="#home">Home</a>
             </motion.li>
-            <motion.li whileHover={{ backgroundColor: 'rgb(95,30,88)' }} whileTap={{ scale: 0.9 }}>
+            <motion.li whileHover={{ backgroundColor: '#1e1d44' }} whileTap={{ scale: 0.9 }}>
               <a href="#services">Servicios</a>
             </motion.li>
-            <motion.li whileHover={{ backgroundColor: 'rgb(95,30,88)' }} whileTap={{ scale: 0.9 }}>
+            <motion.li whileHover={{ backgroundColor: '#1e1d44' }} whileTap={{ scale: 0.9 }}>
               <a href="#about">Nosotros</a>
             </motion.li>
-            <motion.li whileHover={{ backgroundColor: 'rgb(95,30,88)' }} whileTap={{ scale: 0.9 }}>
+            <motion.li whileHover={{ backgroundColor: '#1e1d44' }} whileTap={{ scale: 0.9 }}>
               <a href="#contact">Contacto</a>
             </motion.li>
             <motion.div className="logoContainer">
             <img className="ijacLogoPos" src={ijacLogoPos} alt="logo ijac" />
             </motion.div>
-
           </ul>
         </motion.div>
 

@@ -42,7 +42,7 @@ const IjacServices = () => {
       :
       
         <section className='services__container' id='services'>
-          <h2>Servicios</h2>
+          <h2 className='services__title'>Servicios</h2>
           {
               technicals.map((technical) => {
                 return (

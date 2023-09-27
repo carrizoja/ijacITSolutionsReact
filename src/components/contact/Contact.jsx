@@ -37,8 +37,8 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact">
-      <h5>Tu consulta no es molestia </h5>
+    <section className="contact__container__section" id="contact">
+      <h5 className="contact__subtitle">Tu consulta no es molestia </h5>
       <h2 className="contact__title">Contacto</h2>
 
       <div className="container contact__container">
@@ -48,7 +48,7 @@ const Contact = () => {
           <input type="email" name="email" value={inputs.email} onChange={handleInputChange} placeholder="Tu email" required />
           <textarea name="message" rows="10" value={inputs.message} onChange={handleInputChange} placeholder="Tu mensaje" required />
           <motion.button onClick={notify} type="submit" className="btn btn-primary"  whileHover={{
-                scale: 1.1,
+                scale: 1.03,
                 transition: { type: "spring" }
               }}
               whileTap={{
