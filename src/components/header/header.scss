@@ -29,6 +29,10 @@ header {
   font-size: 3rem;
   text-align: center;
   font-family: "SphereFez";
+  background-clip: text;
+  background: -webkit-linear-gradient(#eee, #c432b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header__titleH2 {
@@ -40,6 +44,10 @@ header {
   font-size: 2rem;
   text-align: center;
   font-family: "SphereFez";
+  background-clip: text;
+  background: -webkit-linear-gradient(#eee, #c432b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* The typing effect */
