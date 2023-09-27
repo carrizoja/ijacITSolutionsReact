@@ -38,8 +38,7 @@
 }
 
 .testimonial {
-  /* background: var(--color-bg-variant); */
-  background: #121145; 
+  background: var(--color-bg-variant); 
   text-align: center;
   padding: 2rem;
   border-radius: 2rem;
@@ -50,7 +49,7 @@
 
 .swiper-slide {
  /*  background: var(--color-bg-variant); */
-  background: #121145;
+ background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
 }
 
 .testimonial:hover {

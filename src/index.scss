@@ -41,7 +41,7 @@
     --color-primary-variant: rgba(77, 181, 255, 0.4);
     --color-secondary: #174273;
     --color-secondary-variant: #0f2b4b;
-    --color-white: #fff;
+    --color-white: #fffbf6;
     --color-light: rgba(255, 255, 255, 0.6);
     --transition: all 400ms ease;
     --container-width-lg: 75%;
@@ -56,9 +56,8 @@ html {
 body {
   font-family: "ConfortaRegular", sans-serif;
   /* Set linear gradient background */
-background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
-/* background-image: radial-gradient(circle farthest-corner at 10% 20%, var( --color-bg)0%,
-  var(--color-bg-variant)90%); */
+/* background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% ); */
+background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, #0e1016 93.2% );
   overflow-x: hidden; 
 }
 
